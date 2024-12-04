@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1240px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.acordion-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  padding-inline: 20px;
+  color: white;
+  background: #9747FF;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+}
+
+.desc {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.icon-span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.acordion-input {
+  display: none;
+}
+
+.acordion-desc1 {
+  display: none;
+  width: 1000px;
+  border: 1px solid #AAAAAA;
+  padding-inline: 20px;
+  border-radius: 10px;
+}
+
+.acordion-desc2 {
+  display: none;
+  width: 1000px;
+  border: 1px solid #AAAAAA;
+  padding-inline: 20px;
+  border-radius: 10px;
+}
+
+.acordion-desc3 {
+  display: none;
+  width: 1000px;
+  border: 1px solid #AAAAAA;
+  padding-inline: 20px;
+  border-radius: 10px;
+}
+
+
+
+#acordion1:checked ~ .acordion-desc1 {
+  display: block;
+}
+
+#acordion2:checked ~ .acordion-desc2 {
+  display: block;
+}
+
+#acordion3:checked ~ .acordion-desc3 {
+  display: block;
+}
